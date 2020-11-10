@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/prime.css">
+    <title>Prime Generator</title>
+</head>
+<body>
+    <div class="title"> 
+        <h1>Prime Generator</h1>
+        <h2>Primes from One to One Million</h2>
+    </div>
+
+    <div class="container">
+        <div class="prime-window">
+            <button class="btn btn-prev-prime">
+                <i class="fas fa-angle-double-up fa-5x"></i>
+            </button>
+        
+            <div id="compBefore" class="composite">X</div>
+            <div id="prime" class="prime">Y</div>
+            <div id="compAfter" class="composite">Z</div>
+        
+            <button class="btn btn-next-prime">
+                <i class="fas fa-angle-double-down fa-5x"></i>
+            </button>
+
+            <div class="modify-menu">
+                <button class="btn btn-composite-toggle">
+                    <i id="switch-icon" class="fas fa-toggle-off fa-5x"></i>
+                </button>
+    
+                <button class="btn btn-fullscreen">
+                    <i id="expand-icon" class="fas fa-expand-alt fa-5x"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="prime-select-window">
+            <p>Prime 
+                <input 
+                    id="prime-index" 
+                    class="prime-input" 
+                    type="number"
+                    min="1"
+                    value="1"
+                >
+                of 78498
+            </p>
+
+            <input 
+                id="slider" 
+                type="range"
+                min="0" 
+                max="100" 
+                step=".01"
+                value="0"
+            >
+        </div>
+    </div>
+
+
+    <script src="assets/SoE.js"></script>
+    <script src="assets/primes.js"></script>
+</body>
+</html>
